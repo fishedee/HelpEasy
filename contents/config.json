@@ -1,0 +1,16 @@
+{
+  "title": "帮助中心",
+  "author": "fishedee",
+  "inputDir": ".",
+  "outputDir": "../docs",
+  "category": [
+    {
+      "name": "更新记录",
+      "articleOrder": "desc"
+    },
+    {
+      "name": "快速入门",
+      "articleOrder": "asc"
+    }
+  ]
+}

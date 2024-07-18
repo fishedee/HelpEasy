@@ -1,0 +1,174 @@
+.dumi-default-header:not([data-static]) {
+    background-color: white;
+    border-bottom: 1px solid rgb(227, 232, 237);
+}
+
+.dumi-default-doc-layout {
+    background: white;
+}
+
+.dumi-default-content,
+.dumi-default-content:not([data-no-sidebar]){
+    border-radius: 0px;
+    box-shadow: none;
+    padding:32px 32px 0;
+}
+
+
+
+.dumi-default-doc-layout>main {
+    align-items: stretch;
+    position: relative;
+}
+
+.dumi-default-sidebar {
+    background-color: #f7f9fb;
+    padding: 0px;
+    width: 250px;
+}
+
+.dumi-default-sidebar>dl>dt {
+    padding-left: 20px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    line-height: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.dumi-default-sidebar>dl>dt:hover {
+    background-color: #ecf5ff;
+    color: #1677ff;
+}
+
+.dumi-default-toc {
+    background: rgba(250, 250, 250);
+    border-inline-start: none;
+}
+
+.dumi-default-toc>li>a {
+    white-space: wrap;
+    text-overflow: initial;
+}
+
+.dumi-default-doc-layout>main>.dumi-default-doc-layout-toc-wrapper>h4 {
+    color: white;
+}
+
+.dumi-default-doc-layout>main>.dumi-default-doc-layout-toc-wrapper>h4:after {
+    content: '目录';
+    font-size: 20px;
+    color: black;
+    position: relative;
+    left: -70px;
+}
+
+@media only screen and (max-width: 767px) {
+    .dumi-default-toc {
+        display: none;
+    }
+}
+
+.dumi-default-sidebar>dl a {
+    padding-left: 40px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 14px;
+}
+
+.dumi-default-sidebar>dl>dd {
+    padding: 0px;
+    border-left: 5px solid transparent;
+}
+
+.dumi-default-sidebar>dl>dd:hover {
+    background-color: #ecf5ff;
+}
+
+.dumi-default-sidebar>dl>dd:has(> .active) {
+    background-color: #ecf5ff;
+    border-left: 5px solid #0868F7;
+}
+
+.dumi-default-sidebar>dl>dd a {
+    font-size: 14px;
+}
+
+.dumi-default-sidebar>dl+dl {
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: 0px;
+}
+
+.dumi-default-sidebar-group dd {
+    display: none;
+}
+
+.dumi-default-sidebar-group:has(a.active) dd {
+    display: block;
+}
+
+.dumi-default-sidebar-group dt::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath d='M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z'/%3E%3C/svg%3E");
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    right: 10px;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
+
+}
+
+.dumi-default-toc>li>a.active {
+    color: #1677ff;
+}
+
+.dumi-default-sidebar-group:has(a.active) dt::after {
+    transform: rotate(0deg);
+}
+
+.dumi-default-header-left {
+    flex: 1 1;
+}
+
+.dumi-default-header-right {
+    flex: none;
+}
+
+.dumi-default-navbar {
+    margin-right: 48px;
+}
+
+.dumi-default-navbar>li>a {
+    color: #333;
+}
+
+.dumi-default-header-content {
+    height: 55px;
+}
+
+.dumi-default-sidebar {
+    top: 55px;
+}
+
+@media only screen and (max-width: 767px) {
+    .dumi-default-sidebar {
+        top: 0;
+    }
+}
+
+body {
+    overflow: scroll;
+}
+
+.dumi-default-hero>p {
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.dumi-default-hero {
+    height: 700px;
+}
