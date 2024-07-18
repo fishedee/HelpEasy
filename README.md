@@ -20,9 +20,16 @@
 感谢：
 
 - 基于[dumi](https://d.umijs.org/guide)，修改了主题模板，更简洁直观
-- 实现 markdown 转换器，自动添加 dumi 需要的 group 头部
+- 实现 markdown 转换器，自动添加 dumi 需要的 group, title, order 等字段，并且自动添加标题，日期和作者。
+- 自动生成首页分类链接
 
-效果在[这里](https://help.balefcloud.com)
+线上网站在[这里]预览(https://help.balefcloud.com)
+
+![](/public/img/2024-07-18-11-25-52.png)
+
+![](/public/img/2024-07-18-11-26-07.png)
+
+效果如上
 
 ## 编写文档
 
